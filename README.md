@@ -24,3 +24,14 @@ See source "code"
 ---------------------
 Based on the Twine Engine so you'll need to take "RawLoop.html" and load it into Twine.
 
+-----------------------
+Feedback from Player (Author's Note: I have since fixed some of these issues pointed out in the critique)
+-----------------------
+Nikurou's game was centered on a looping mechanic.  You played as a student, whose friends were talking about an RPG he's never heard of.  As the story unfolds, he learns several facts that completely shake his worldview.  When he dies or the day ends, he wakes up in his bed and sees that the same day is repeating itself.
+The game has a very interesting story, and it is well presented.  The player is able to infer what's happening without being explicitly told everything.  The writing is also very solid.
+The second half of the story hadn't been implemented yet, so I didn't get to see how it ends, but I'm looking forward to it.
+One issue I had was that there were a lot of choices that ended up having no impact on the story (choosing to go to the gym or cafeteria for example), and due to the looping mechanic, the player is compelled to choose them all, leading to a lot of repeated text.  It also doesn't make a lot of sense for the antagonists to be everywhere you go from a story perspective, since it should be a perfect loop.
+Another problem was that you could choose to not interact with the antagonists at all, and the day would end and everything would loop.  This is especially strange since after you learn about the antagonists, and the fact that the day is looping, it doesn't make much sense to just ignore them and go on with your day like nothing's wrong.  These paths just add more repeated text without contributing anything to the story.  I think they should be cut or not allowed to happen after the first loop.
+I think there should be more decision trees that can only be beaten using knowledge gained from previous loops.  For example, the protagonist would learn an important piece of information, but it would only be useful earlier in the day, or he had to let himself be killed in order to learn it.  As a mechanic, the looping should give an in-universe reason for the player character to make different choices.  Otherwise, the player could just restart the game themselves.  This would be a very intensive change, because a large amount of dialog or story would have to be rewritten, not to mention the added coding complexity.
+Even though I spent a lot of time criticizing it, I have a very favorable impression of this game.  Most of my suggestions can be summed up as: get rid of the parts that don't advance the story, because the story is so good I don't want to wait to read it.
+
