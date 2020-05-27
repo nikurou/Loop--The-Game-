@@ -1,0 +1,1205 @@
+<tw-storydata name="Loop" startnode="37" creator="Twine" creator-version="2.2.1" ifid="2387A91C-ECD9-47C4-9D22-D89D2F100DBC" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Waking Up" tags="" position="284,529" size="100,100">
+&lt;audiosrc= &quot;https://onlineclock.net/audio/options/default.mp3&quot; autoplay&gt; 
+Loop() Day (print: $day)
+
+You wake up to the sound of your alarm going off. It&#39;s still quite dark outside. However, today&#39;s the first day of the school year, and you&#39;ve woken up especially early to avoid traffic and to get to your classes on time. After getting dressed and eating a quick breakfast, you hop into your car and make your commute to [[school]].</tw-passagedata><tw-passagedata pid="2" name="school" tags="" position="374,508" size="100,100">
+(if:$day is 1)[
+You arrive at school a lot earlier than you intended. In fact, there&#39;s hardly a soul on campus! Checking your phone you realize that you came way too early, and there&#39;s still another hour until your first class begins. You decide to walk around campus to pass the time.......
+
+You decide to head to the [[gym]], [[cafeteria]], [[bathroom]]. ]
+(if:$day is 2)[
+You step onto campus once again, and strangely everything is the same as it was last time. There&#39;s hardly a soul on campus yet. Perhaps you should find Harold and Kon again. It would probably be a good idea to talk them once more.
+
+You decide to head to the (link-goto: &quot;$location&quot;, $location).
+]
+
+(if:$day &gt; 2) [
+You&#39;re on campus once again. Best seek out Harold and Kon again, they&#39;re your best lead to solving this time-loop mystery. 
+
+You decide to head to the (link-goto: &quot;$location&quot;, $location).
+]</tw-passagedata><tw-passagedata pid="3" name="gym" tags="" position="613,618" size="100,100">(set: $lastPassage to &quot;gym&quot;)
+(set: $location to &quot;gym&quot;)
+(if:$day is 1)[
+Although you have no intentions of working out so early in the morning, you head to the gym for no better reason than to get out of the cold. You take a seat in the lounge area and play around on your phone.
+
+To your surpise, you find your two best friends, [[Harold and Kon]] in there as well talking about what sounds like some sort of video game. They don&#39;t seem to notice you at all. You could [[greet]] them, but you kind of want some peace in the morning and decide to [[ignore]] them. ]
+(elseif:$day is 2)[
+Though you have no idea if Harold and Kon will actually be in the gym or not, you decide to search there anyways.
+
+To your surpise, you really do find your two best friends, [[Harold and Kon]] in there as well talking about the same video game as last time! They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them. ]
+(elseif:$day is &gt;= 3 )[
+As you expected, you find your two best friends, [[Harold and Kon]] in the gym talking about the same video game as last time. They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them. ]
+</tw-passagedata><tw-passagedata pid="4" name="cafeteria" tags="" position="613,495" size="100,100">(set: $lastPassage to &quot;cafeteria&quot;)
+(set: $location to &quot;cafeteria&quot;)
+(if:$day is 1)[
+You had left your home quite early in a hurry to beat traffic and you had little to eat fror breakfast. You decide it&#39;d be a good idea to buy some breakfast before class. 
+
+To your surpise, you see your two best friends, [[Harold and Kon]] walk in the cafeteria talking about some video game. They don&#39;t seem to notice you at all. You could [[greet]] them and call them over, but a part of you wants to eat in peace and [[ignore]] them.]
+(elseif:$day is 2)[
+Though you don&#39;t know if Harold and Kon will actually be in the cafeteria, you search there anways. 
+
+To your surpise, you really do see your two best friends, [[Harold and Kon]] walk in the cafeteria talking about the same video game as last time. They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them.]
+(elseif:$day is &gt;= 3 )[
+As you expected, you see your two best friends, [[Harold and Kon]] walk in the cafeteria talking about the same video game as last time. They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them.]
+</tw-passagedata><tw-passagedata pid="5" name="bathroom" tags="" position="613,380" size="100,100">(set: $lastPassage to &quot;bathroom&quot;)
+(set: $location to &quot;bathroom&quot;)
+(if:$day is 1)[
+You had little time to do your business this morning. You decide going to the bathroom is as good as any method to pass the time. 
+
+To your surpise, you hear your two best friends, [[Harold and Kon]] walk in the bathroom as well talking about what seems to be a new video game. They don&#39;t seem to notice you at all. You could [[greet]] them, but you feel that now is not the best time to talk to them while you&#39;re here to do your business and wonder if it&#39;s best that you just [[ignore]] them.]
+(elseif:$day is 2)[
+Though you don&#39;t know if Harold and Kon will actually be in the bathroom or not, you decide to head there anyways.
+
+To your surpise, [[Harold and Kon]] walk in the bathroom talking about the same video game they were talking about last time! They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them.
+]
+(elseif:$day is &gt;= 3)[
+To your surpise, you hear your two best friends, [[Harold and Kon]] walk in the bathroom talking about the same video game you heard about earlier. They don&#39;t seem to notice you at all. You could [[greet]] them or you could [[ignore]] them.]
+</tw-passagedata><tw-passagedata pid="6" name="greet" tags="" position="691,395" size="100,100">You decide to greet them and prepare to call out to them as you overhear Kon talking about getting ready for some sort of dungeon here. In recent years AR MMO games have become quite popular, and you suspect Kon and Harold may have gotten their hands on a new game though strangely you don&#39;t see them wearing their AR gaming peripherals that would allow them to play. 
+
+[[&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="7" name="ignore" tags="" position="798,603" size="100,100">You decide to ignore them for now, and the two don&#39;t seem to notice you. However you can hear Kon talking in a low but excited voice about the dungeon in this area. In recent years AR MMO games have become quite popular, and you suspect Kon and Harold may have gotten their hands on a new game though strangely you don&#39;t see them wearing their AR gaming peripherals that would allow them to play.
+
+For now, you decide to [[listen in on their conversation]], though you figure that&#39;d be rude and decide to [[leave and go to class]].</tw-passagedata><tw-passagedata pid="8" name="Harold and Kon" tags="" position="648,829" size="100,100">Your two best friends since high school. You befriended them while talking about your favorite MMORPG&#39;s years ago. Harold has an outgoing and extroverted personality, whereas Kon is exactly the opposite, shy and introverted. Yet somehow when the two are together they become totally different people and never cease to shut up and find new methods to annoy you.
+
+(link-goto: &quot;Back&quot;, $lastPassage)
+</tw-passagedata><tw-passagedata pid="9" name="&quot;What game are you guys talking about?&quot;" tags="" position="806,405" size="100,100">(if: $likeability &lt;= -7) [
+	[[Harold and Kon look at you with suspicion -&gt;Death]]
+]
+(else:)[
+&quot;[[Atlam]], what are you talking about?,&quot; replied Kon, raising his eyebrows up slightly, &quot;[[the same game we&#39;ve beta-testing since last week]]&quot;.  
+
+Harold frowned, &quot;What took you so long to get here anyways? The [[dungeon]] is about to open. Time may be accelerated while we&#39;re connected, but I sure as hell don&#39;t want to want to wait for the next one because of you.&quot;
+
+[[&quot;.....I&#39;m sorry?&quot;]] 
+(if: $clue contains &quot;Atlam&quot;)[ [[&quot;Atlam? That&#39;s not my name?&quot;]]]
+(if: $clue contains &quot;beta&quot;)[ [[&quot;Uh...What game are you guys talking about again?&quot;]] ]
+(if: $clue contains &quot;dungeon&quot;) [ [[&quot;Wait, what dungeon?&quot;]] ]
+]</tw-passagedata><tw-passagedata pid="10" name="the same game we&#39;ve beta-testing since last week" tags="" position="1064,298" size="100,100">&#39;&#39;Clue added&#39;&#39;
+
+(set: $clue to $clue + (array:&quot;beta&quot;))
+
+It seems the two have been beta-testing some sort of game, not that you&#39;ve been aware of it all. In fact, you haven&#39;t seen them since the end of the last semester as far as you&#39;re concerned. 
+
+[[back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="11" name="Atlam" tags="" position="1116,400" size="100,100">&#39;&#39;Clue added&#39;&#39;
+
+(set: $clue to $clue + (array:&quot;Atlam&quot;))
+
+That&#39;s not even your name....something must be wrong with your friends.
+
+[[back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;Atlam? That&#39;s not my name?&quot;" tags="" position="1246,434" size="100,100">&#39;&#39;Harold and Kon found that extremely odd&#39;&#39;
+(set:$likeability to $likeability -4)
+
+(if: $likeability &gt;= -7) [
+Harold and Kon look at you strangely but seem more confused than wary of you.&quot;Very funny, Atlam,&quot; said Kon while shaking his head, &quot;I wonder how long you can keep this joke up, we know for a fact it&#39;s you. The System has marked you as a player, so unless there&#39;s a bug your pranks wont work on us.&quot;
+
+(set: $clue to $clue + (array:&quot;bugged&quot;))
+&#39;&#39;Obtained a clue: Bugged NPC&#39;&#39;
+[[Back -&gt;&quot;What game are you guys talking about?&quot;]]
+
+]
+(else:)[
+[[&quot;Then who are you?&quot; -&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="13" name="&quot;Uh...What game are you guys talking about again?&quot;" tags="" position="1046,449" size="100,100">&#39;&#39;Harold and Kon found that really suspicious&#39;&#39;
+(set:$likeability to $likeability -2  )
+
+&quot;Really dude?&quot; said Harold, &quot;Were you paying attention at all this entire week?&quot; 
+
+Kon sighed, &quot;What&#39;s up with you today? You&#39;re acting really strange. We&#39;re beta-testing for [[SecondLife]] of course.&quot;
+
+[[Back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="14" name="SecondLife" tags="" position="1353,297" size="100,100">You ask Kon to elaborate on the game SecondLife. 
+
+&#39;&#39;Harold and Kon found that odd&#39;&#39;
+
+Kon gives you a strange look as if you should know all this already but explains anyways, &quot;It&#39;s by far the most advanced video game that replicates the setting of the world back during the 21st century. In fact, [[every NPC has a fully humanistic A.I.]] that makes them almost indifferentiable from us! Of course, there have been some liberties taken by adding dungeons and raids other game like content.&quot;
+
+Harold nodded, &quot;Yeah, though it&#39;s a bit troublesome. As NPC&#39;s have their own realistic A.I.&#39;s, our characters are managed by A.I. after we log off and live their own lives as to not cause any logic errors in the world such as us dissapearing when logging off. Though, the [[System]] does cover for any discrepancies we the players cause while logged in and blocks that part out of all the related NPC&#39;s memories.&quot;  
+
+&#39;&#39;Clue Added: SecondLife&#39;&#39;
+(set: $clue to $clue + (array:&quot;SecondLife&quot;))
+
+[[Back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="15" name="every NPC has a fully humanistic A.I." tags="" position="1518,340" size="100,100">&#39;&#39;Clue Added&#39;&#39;
+(set: $clue to $clue + (array:&quot;AI&quot;))
+
+NPCs are managed by advanced A.I.&#39;s. Players who log off have their characters resume their daily lives as NPC&#39;s. If your friends are to be believed, you are the NPC for the player named Atlam!
+
+[[Back-&gt;SecondLife]]</tw-passagedata><tw-passagedata pid="16" name="System" tags="" position="1538,230" size="100,100">&#39;&#39;Clue Added&#39;&#39;
+(set: $clue to $clue + (array:&quot;System&quot;))
+An entity which represents itself in the world as a being. Regulates flow of the world so that anything the players do does not change the world or effect the NPC&#39;s.  
+
+[[Back-&gt;SecondLife]]</tw-passagedata><tw-passagedata pid="17" name="&quot;.....I&#39;m sorry?&quot;" tags="" position="2042,739" size="100,100">(if:$likeability is -1)[
+You still really have no idea what your friends are talking about, but you no longer feel like investigating the case any further. The two are known to play off weird pranks like this at times though, and you decide to play along with them this time. 
+
+Kon let out a sigh, &quot;Dude, you&#39;re acting real strange today.&quot;
+
+Harold suddenly looks at you and asks you &quot;Hey, do you remember what&#39;s going to be in this dungeon?&quot;
+
+(if:$clue contains &#39;dungeon-info&#39;)[
+[[Of course, we&#39;re facing Goblins-&gt;Q2]]]
+(else:)[
+&#39;&#39;You really have no clue...&#39;&#39;
+
+[[Yeah, some gangster mobs? -&gt;Death]]
+[[Orcs of course -&gt;Death]]
+[[Um...Kobolds?-&gt;Death]]
+]
+]
+(else:) [
+&#39;&#39;Harold lets out a laugh&#39;&#39;
+
+&quot;HAHA, come on dude, you should see your face! I was just playing with you. Come on, we better get to class or we&#39;ll be late&quot; said Harold still laughing.
+
+Kon looks at Harold with a confused expression &quot;Huh? Why would we go to cla-&quot;
+
+&quot;Come on, we don&#39;t want to be late for our first day!&quot; 
+
+&#39;&#39;Harold jovially urges you both to class&#39;&#39;
+
+The rest of the day passes normally as you attend class, hang out with Harold and Kon, who apparently no longer remember their &quot;prank&quot; this morning. You can&#39;t help but think that Harold and Kon are hiding something though. With those uneasy thoughts you head home and prepare for the next day.
+
+[[Another day, another adventure!-&gt;Waking Up2]]
+
+]</tw-passagedata><tw-passagedata pid="18" name="Death" tags="" position="1846,336" size="100,100">&#39;&#39;Harold and Kon are hostile to you!&#39;&#39;
+
+&quot;Wait a second....You&#39;re not Atlam. You...You&#39;re the NPC who maintains Atlam&#39;s character! I don&#39;t know how a NPC has achieved Atlam&#39;s player rights and what you&#39;ve done with him, but we&#39;re taking you down!&quot; cried Harold as realization dawned on his face.
+
+[[What? I don&#39;t even know what you&#39;re talking about?]]
+[[(lie) Wait! I am Atlam!]] 
+[[(Defend yourself!)]]</tw-passagedata><tw-passagedata pid="19" name="dungeon" tags="" position="1655,336" size="100,100">&#39;&#39;Clue added&#39;&#39;
+
+(set: $clue to $clue + (array:&quot;dungeon&quot;))
+
+Given that your friends are talking about a video game, the dungeon is probably a typical video game dungeon where you face monsters and fight a boss at the end to claim the loot.
+
+[[back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="20" name="&quot;Wait, what dungeon?&quot;" tags="" position="1376,537" size="100,100">&#39;&#39;Harold and Kon found that extremely odd&#39;&#39;
+(set:$likeability to $likeability -4)
+
+&quot;Hello? &#39;&#39;THE&#39;&#39; dungeon we&#39;ve been looking fowards to for the past two weeks?&quot; said Kon, &quot;How could you possibly forget about that?&quot;
+
+Harold nodded &quot;Yeah, we&#39;ve already done the research. It&#39;s a beginner fantasy-type dungeon with some run of the mill goblins&quot;
+
+&#39;&#39;Clue Added: dungeon-info&#39;&#39;
+(set: $clue to $clue + (array:&quot;dungeon-info&quot;))
+[[back-&gt;&quot;What game are you guys talking about?&quot;]]</tw-passagedata><tw-passagedata pid="21" name="listen in on their conversation" tags="" position="1064,689" size="100,100">Well whatever, they&#39;re just talking about games. You decide to eavesdrop into their conversation. 
+
+&quot;[[Atlam-&gt;Atlam2]] is late&quot;, Harold said in a strangely cold voice, &quot;He should know that the [[dungeon-&gt;dungeon2]] here starts soon&quot; 
+
+&quot;Chill out, [[Haroon]], his NPC probably put him in a tough spot before he logged in,&quot; chuckled Kon.
+
+&#39;&#39;Minutes pass in silence&#39;&#39;
+
+&quot;Damnit, why hasn&#39;t Atlam shown up? He knows damn well we can&#39;t run the dungeon without a &#39;&#39;tanker&#39;&#39;,&quot; groaned an impatient Harold.
+
+&quot;That&#39;s not like him at all...&quot; said Kon shaking his head.
+
+[[Next]]
+</tw-passagedata><tw-passagedata pid="22" name="leave and go to class" tags="" position="1552,609" size="100,100">You get to class a bit early and by now students are beginning to file in. Shortly after, Harold and Kon run in panting and out of breath, having barely made it to class in time. Upon seeing you, they give you a wave before sitting next to you. The rest of the day passes uneventfully as you finish class and hang out with Harold and Kon before heading home to prepare for the next day. If only everyday could be as peaceful as this. With those thoughts you head to bed.
+
+[[Another day, another adventure!-&gt;Waking Up2]]</tw-passagedata><tw-passagedata pid="23" name="Atlam2" tags="" position="954,737" size="100,100">&#39;&#39;Clue added&#39;&#39;
+
+(set: $clue to $clue + (array:&quot;Atlam&quot;))
+Though you have no idea who Atlam is, it&#39;s apparent they were meant to meet him here. 
+
+[[back-&gt;listen in on their conversation]]</tw-passagedata><tw-passagedata pid="24" name="dungeon2" tags="" position="1080,819" size="100,100">&#39;&#39;Clue added&#39;&#39;
+
+(set: $clue to $clue + (array:&quot;dungeon&quot;))
+
+Given that your friends are talking about a video game, the dungeon is probably a typical video game dungeon where you face monsters and fight a boss at the end to claim the loot.
+
+[[back-&gt;listen in on their conversation]]</tw-passagedata><tw-passagedata pid="25" name="Waking Up2" tags="" position="264,420" size="100,100">(set: $day to $day + 1)
+(set:$likeability= -1)
+&lt;audiosrc= &quot;https://onlineclock.net/audio/options/default.mp3&quot; autoplay&gt; 
+Loop() Day (print: $day)
+
+(if: $day is 2)[
+You wake up to the sound of your alarm going off. It&#39;s still quite dark outside, which is strange because you definitely didn&#39;t plan on waking up extra early today. Regardless you&#39;re awake now, so you get up and get dressed and eat a quick breakfast. You pull out your phone to look at today&#39;s schedule when you notice that the date had not changed from yesterday? Still, life goes on.
+
+[[Head to School -&gt;school]]]
+(else:)[
+You wake up once again to the blaring sound of your alarm. You check the date once again. It hasn&#39;t changed. Had you known you&#39;d be stuck in a time loop, perhaps you wouldn&#39;t have set that alarm. Begrudgingly, you set out once more to solve the mystery of the time loop that no one remembers but you. 
+
+[[Head to School -&gt;school]]
+]</tw-passagedata><tw-passagedata pid="26" name="(lie) Wait! I am Atlam!" tags="" position="2126,531" size="100,100">(set: $lastPassage to &quot;(lie) Wait! I am Atlam!&quot;)
+&#39;&#39;Harold does not believe you&#39;&#39;
+
+&quot;As if I&#39;d believe that now!&quot; shouted Harold, &quot;Besides the System actively rewards players for removing [[bugged NPC&#39;s]] like you.&quot; A staff made of wood magically appears in Harold&#39;s hand and he prepares to launch a spell at you. 
+
+&#39;&#39;You have entered PvP mode with userID&#39;s [[Haroon and Karn]]!&#39;&#39;
+
+Kon or rather, Karn, mutters an apology to you before pulling out daggers from thin air.
+
+[[&#39;&#39;You have died!&#39;&#39;-&gt;wakeup3]]</tw-passagedata><tw-passagedata pid="27" name="(Defend yourself!)" tags="" position="2042,292" size="100,100">(if: $level &lt; 3) [
+
+A staff made of wood magically appears in Harold&#39;s hand and he prepares to launch a spell at you. 
+
+&#39;&#39;You have entered PvP mode with userID&#39;s [[Haroon and Karn]]!&#39;&#39;
+
+Kon or rather, Karn, mutters an apology to you before pulling out daggers from thin air.
+
+(set: $day to $day + 1)
+&#39;&#39;You&#39;re no match for them at your current level!&#39;&#39;
+[[&#39;&#39;You have died!&#39;&#39;-&gt;wakeup3]]
+]
+(if:$level &gt;= 4) [
+A staff made of wood magically appears in Harold&#39;s hand and he prepares to launch a spell at you. 
+
+&#39;&#39;You have entered PvP mode with userID&#39;s [[Haroon and Karn]]!&#39;&#39;
+
+Kon or rather, Karn, mutters an apology to you before pulling out daggers from thin air.
+
+But you&#39;re far more experienced than Karn and Haroon in battle, who have yet to experience their first dungeon! 
+
+[[Next-&gt;DefendYourself2]]
+]</tw-passagedata><tw-passagedata pid="28" name="Haroon and Karn" tags="" position="2116,421" size="100,100">&#39;&#39;Clue Added: Haroon and Karn&#39;&#39;
+
+As you were called by the strange name of Atlam, it seems Harold and Kon also have different names that represent their true identity outside of the game.
+
+(set: $clue to $clue + (array:&quot;Haroon&quot;, &quot;Karn&quot;))
+
+(link-goto: &quot;Back&quot;, $lastPassage)</tw-passagedata><tw-passagedata pid="29" name="wakeup3" tags="" position="285,636" size="100,100">(set: $day to $day + 1)
+(set: $numDeath to $numDeath + 1)
+(set:$likeability= -1)
+&lt;audiosrc= &quot;https://onlineclock.net/audio/options/default.mp3&quot; autoplay&gt; 
+Loop() Day (print: $day)
+
+(if: $day is 2)[
+You wake up abruptly to the sound of your alarm blaring and you jolt up with a sharp gasp. You were certain you had just died, but you find yourself in your bed once again almost exactly as you had found yourself earlier in what you believe to be a nightmare. Checking your phone, you realize that the date had not changed at all and it was indeed a dream and you let a deep sigh. A nightmare before the first day of school wasn&#39;t exactly how you wanted to start your day, but [[life goes on-&gt;school]].   ]
+(else:)[
+You wake up once again to the blaring sound of your alarm, having died once again. Had you known you&#39;d be stuck in a time loop, perhaps you wouldn&#39;t have set that alarm you think while letting out a groaning. Begrudgingly, you set out once more to solve the mystery of the time loop that no one remembers but you. 
+
+[[Head to School -&gt;school]]
+]</tw-passagedata><tw-passagedata pid="30" name="What? I don&#39;t even know what you&#39;re talking about?" tags="" position="2016,555" size="100,100">(set: $lastPassage to &quot;What? I don&#39;t even know what you&#39;re talking about?&quot;)
+&#39;&#39;Harold could care less....&#39;&#39;
+
+&quot;Which proves you&#39;re not Atlam!&quot; shouted Harold, &quot;You&#39;re just a [[bugged NPC-&gt;bugged NPC&#39;s]]!&quot; A staff made of wood magically appears in Harold&#39;s hand and he prepares to launch a spell at you. 
+
+&#39;&#39;You have entered PvP mode with userID&#39;s [[Haroon and Karn]]!&#39;&#39;
+
+Kon or rather, Karn, mutters an apology to you before pulling out daggers from thin air.
+
+[[&#39;&#39;You have died!&#39;&#39;-&gt;wakeup3]]</tw-passagedata><tw-passagedata pid="31" name="Next" tags="" position="1202,744" size="100,100">&#39;&#39;Several more minutes pass&#39;&#39;
+
+&quot;Damn it, [[Karn]]!,&quot; cursed Harold, &quot;We missed the period to enter the dungeon because of him! Now we have to wait till next week. When I get my hands on Atlam, I&#39;m going to strangle him! Ugh, I&#39;m logging off&quot;
+
+&#39;&#39;Harold&#39;s body shook for a second before he regained his senses and looked around in confusion&#39;&#39;
+
+Kon sighed and made a few unknown hand gestures into the air, and shortly after, his body similar shook for a second before he seemed to come back to himself. 
+
+You don&#39;t know what to think about the spectacle you just witnessed. Perhaps it was another one of their elaborate pranks or perhaps not, but Kon&#39;s next statement doesn&#39;t leave you much time for you to dwell on it.
+
+&quot;Gah, what just happened?&quot; muttered Kon as he looked around in confusion, &quot;Huh, Harold? What are you- OH CRAP, WE&#39;RE GOING TO BE LATE!&quot;
+
+[[Yikes! You&#39;re going to be late too!-&gt;Head to class]]</tw-passagedata><tw-passagedata pid="32" name="Head to class" tags="" position="1387,667" size="100,100">Where did the time go? You&#39;re going to be dropped from the class at this rate! You begin sprinting after your friends who urge you on upon noticing you and the three of you barely make it to class in time. 
+
+Out of breathe and sweaty, the three of you find whatever desks you can and the day passes by uneventfully. After class, your Harold and Kon ask you if you want to [[hang out]], but you&#39;re kind of exhausted and would [[like to go home-&gt;go home]].
+
+</tw-passagedata><tw-passagedata pid="33" name="go home" tags="" position="1551,743" size="100,100">You get home and begin to prepare for the next day. Despite the weird shennangins that happened today, you can&#39;t help but enjoy your everyday life for what it is. If only everyday could be as peaceful as this. With those thoughts you head to bed.
+
+(set: $day to $day + 1)
+[[Another day, another adventure!-&gt;Waking Up2]]</tw-passagedata><tw-passagedata pid="34" name="hang out" tags="" position="1390,797" size="100,100">You decide to hang out with your friends, who you haven&#39;t really seen the end of the last semester. After getting all caught up, you recall their bizzare antics this morning and [[decide to ask them about it]], but you&#39;re almost convinced it&#39;s a prank and asking would only mean playing into their hands. Best not to give them that satisfaction and [[head home-&gt;go home]]. </tw-passagedata><tw-passagedata pid="35" name="decide to ask them about it" tags="" position="1385,927" size="100,100">You finally cave in and ask both Harold and Kon about their shennanigans that almost made them all late this morning. However both of them are confused by your question, and at this point you can&#39;t tell if they&#39;re secretly world-class actors. They claimed that they were just hanging out before losing track of time, causing them to rush to class.
+
+[[After saying goodbye, you head on home -&gt;go home]]</tw-passagedata><tw-passagedata pid="36" name="Q2" tags="" position="2160,738" size="100,100">&quot;Okay and what&#39;s the name of the game we&#39;re playing?&quot; replied Harold.
+&quot;Hey Har, why are you questioning him-&quot;  
+&quot;Quiet,&quot; Harold quickly cut Kon off and looks at you with a serious face, &quot;You, answer my question&quot;.
+
+(if:$clue contains &#39;SecondLife&#39;)[
+[[We&#39;re playing SecondLife of course.-&gt;Q3]]]
+(else:)[
+&#39;&#39;You really have no clue...&#39;&#39;
+
+[[World of Warcraft Mobile? -&gt;Death]]
+[[Ingress? -&gt;Death]]
+[[Um...Pokemon Go?-&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="37" name="Loop() Title Screen" tags="" position="165,539" size="100,100">(set: $lastPassage to &quot;&quot;) (set:$numDeath to 0) (set:$numDDeath to 0) (set: $day = 1) (set:$likeability= -1) (set: $clue to (array:)) (set: $level to 1) (set: $min to 1) (set: $max to 5) (set: $maxHP to 15 +($level*5)) (set: $currentHP to $maxHP) (set:$friendDeath to 0)
+
+
+					 &#39;&#39;[[Loop().Start-&gt;Waking Up]]&#39;&#39;
+					 
+</tw-passagedata><tw-passagedata pid="38" name="Karn" tags="" position="1199,895" size="100,100">&#39;&#39;Clue Added&#39;&#39;
+
+This must be Kon&#39;s in-game name!
+
+(set: $clue to $clue + (array:&quot;Karn&quot;))
+[[Back-&gt;Next]] </tw-passagedata><tw-passagedata pid="39" name="Haroon" tags="" position="1072,949" size="100,100">&#39;&#39;Clue Added&#39;&#39;
+
+This must be Harold&#39;s in-game name!
+(set: $clue to $clue + (array:&quot;Haroon&quot;))
+[[Back-&gt;listen in on their conversation]] </tw-passagedata><tw-passagedata pid="40" name="Q3" tags="" position="2279,737" size="100,100">
+&quot;...and what does the System do?&quot;
+
+(if:$clue contains &#39;System&#39;)[
+[[Regulates flow of the world so that anything the players do does not change the world or effect the NPC&#39;s. Often manifests as a person in the world-&gt;Q4]] 
+]
+(else:)[
+&#39;&#39;You really have no clue...&#39;&#39;
+
+[[Um...it&#39;s like a game system?-&gt;Death]]
+[[It&#39;s...uh...the thing that..ummm-&gt;Death]]
+[[It bans and suspends bad users?-&gt;Death]]
+]</tw-passagedata><tw-passagedata pid="41" name="bugged NPC&#39;s" tags="" position="1808,479" size="100,100">(set: $clue to $clue + (array:&quot;bugged&quot;))
+&#39;&#39;Obtained a clue: Bugged NPC&#39;&#39;
+
+It seems you&#39;re a NPC that somehow obtained the player Atlam&#39;s player rights!
+
+(link-goto: &quot;Back&quot;, $lastPassage)</tw-passagedata><tw-passagedata pid="42" name="Q4" tags="" position="2390,737" size="100,100">&quot;Then...what are our names?&quot; asked Harold.
+
+Even Kon is looking at you in anticipation now.
+
+(if: $clue contains &#39;Haroon&#39; and $clue contains &#39;Karn&#39;)[
+[[My name is Atlam. You&#39;re Haroon and that&#39;s Karn.-&gt;Pass]]
+]
+(else:)[
+What a strange question. There can only be one answer, right?
+
+[[You&#39;re Harold and he&#39;s Kon, of course.-&gt;Death]] 
+]</tw-passagedata><tw-passagedata pid="43" name="Pass" tags="" position="2501,741" size="100,100">
+Haroon lets out a relieved sigh, &quot;Hah...so it is you Atlam. For a second there I thought your character bugged out somehow and we lost you.&quot;
+
+&quot;Ah, so that&#39;s what you were so worried about,&quot; said Karn, &quot;Come on dude, we watched Atlam connect in real life just minutes before us and no error messages showed up on his console. Sorry about that, Atlam, you know how Haroon can be.&quot;
+
+&quot;Hey, to be fair he was acting a bit different from his normal self,&quot; cleared his throat Haroon in embarrasment, &quot;Anyways, look at that, the dungeons just about here.&quot;
+
+//As if right on cue, a massive set of double doors appears in front of you//
+
+[[Enter the Dungeon-&gt;Checkpoint]]
+
+(set: $min to 1)
+(set: $max to 5)
+(set: $exp to 0)
+</tw-passagedata><tw-passagedata pid="44" name="Enter the Dungeon" tags="" position="1893,1501" size="100,100">(set: $clue2 to (array:))
+(set: $HarEquip to 0)
+
+After pushing open the door, you&#39;re caught off guard by the bright flash of light and are momentarily blinded. 
+
+&quot;Ack, it&#39;s so bright!&quot; cried Karn
+
+Haroon shielded his eyes a moment too late as well, and bumbles into your back.
+
+Slowly your vision returns to you and you feel the warm embrace of the sun and a slight breeze. In front of you is a dainty rural looking town that looks reminiscient of the 17th century. 
+
+&quot;This...this is what a dungeon looks like?&quot; asked Kon, &quot;I really doubt we&#39;re going to see goblins here Haroon...&quot;
+
+&quot;This...shouldn&#39;t be!,&quot; cried Haroon in disbelief, &quot;All my sources said this would definitely be a cave like dungeon with goblins!&quot; 
+
+For now, you decide to [[head towards the town]]
+
+</tw-passagedata><tw-passagedata pid="45" name="Checkpoint" tags="" position="2610,730" size="100,100">&#39;&#39;Checkpoint Reached!&#39;&#39;
+//From now on you&#39;ll have the option of looping to the start of the game with all your memories intact, or looping to the beginning of this dungeon//
+
+
+You would like to.....
+[[Enter the Dungeon-&gt;Enter the Dungeon2]] 
+[[Loop to the start-&gt;Waking Up2]] 
+
+(set: $maxHP to 10 +($level*5))
+(set: $currentHP to $maxHP)
+(set: $num5Potion to 0)
+(set: $day to $day +1)
+</tw-passagedata><tw-passagedata pid="46" name="head towards the town" tags="" position="2011,1502" size="100,100">As you march towards the town, you see that the atmosphere around the town seems quite dark. Though you know nothing about 17th century towns, the lack of life around the village gives you an ominous feeling. Haroon and Kon also seem to be in agreement as they stare at the town with a grim expression. 
+
+&quot;It&#39;s...really quiet here&quot; observed Haroon.
+
+&quot;Hey, where is everybody?&quot; 
+
+It isn&#39;t long before you reach the entrance of the town. You see a old wooden sign by the entrance. The words are faded, but you can probably make it out if you [[take a closer look at it]]. You&#39;re not sure what to do from here, aside from [[head into the town]], but perhaps you should [[consult your friends first]].</tw-passagedata><tw-passagedata pid="47" name="take a closer look at it" tags="" position="2251,1341" size="100,100">You take a closer look a the board and are able to make out the words: 
+
+&#39;&#39;Welcome to the Town of Salem&#39;&#39;
+
+(set: $clue2 to $clue2 + (array:&quot;Salem&quot;))
+&#39;&#39;Obtained a clue: Salem&#39;&#39;
+
+[[Back-&gt;head towards the town]]</tw-passagedata><tw-passagedata pid="48" name="head into the town" tags="" position="2313,1456" size="100,100">
+With no other options, you head into town. As soon as you enter, you see a man runs towards you from the distance while waving at you. By the time he arrives in front of you, he&#39;s out of breath. 
+
+&quot;Hail good sirs! I presume you lot are the Witch Hunters we requested?&quot;
+
+[[Yup, that&#39;s us]]
+[[Nope, you got the wrong people]]
+</tw-passagedata><tw-passagedata pid="49" name="consult your friends first" tags="" position="2199,1578" size="100,100">You decide to ask your friends for their opinion or to talk. What would you like to discuss? 
+
+[[&quot;What classes are you guys playing again?&quot;]]
+[[&quot;So...what now?&quot;]]
+(if:$clue2 contains &#39;Salem&#39;)[
+[[So apparently this place is called Salem, sound familiar to you guys?]]
+]
+
+[[Back-&gt;head towards the town]]</tw-passagedata><tw-passagedata pid="50" name="&quot;What classes are you guys playing again?&quot;" tags="" position="2285,1707" size="100,100">Kon raises his eyebrows, &quot;Uh...the thief/assassin class like I always do? Haroon over there is a mage/healer.&quot;
+
+&quot;Idiot, that&#39;s not what Atlam meant. He was asking about our skills. Kon is obviously going to be good with sneaking in places, unlocking doors, and stealing, and well as for me, I can cast some basic spells like fireball, icebolt, and lighting. Other than that I have some healing related spells.&quot;
+
+
+[[...That&#39;s exactly what I meant. Thanks.-&gt;consult your friends first]]</tw-passagedata><tw-passagedata pid="51" name="&quot;So...what now?&quot;" tags="" position="2175,1708" size="100,100">&quot;We should head in,&quot; said Harold, &quot;Since it&#39;s seems like a historical dungeon, I&#39;m assuming someone will give us a quest to solve.&quot;
+
+&quot;Yup, I agree. Come on, let&#39;s go&quot; 
+
+[[Back-&gt;consult your friends first]]</tw-passagedata><tw-passagedata pid="52" name="So apparently this place is called Salem, sound familiar to you guys?" tags="" position="2065,1707" size="100,100">At the mention of the word &#39;&#39;Salem&#39;&#39;, Haroon&#39;s eyes bulge as he frantically throws his wizard robes and staff into his inventory, causing them to dissapear before your very eyes leaving him in nothing but a shirt and pants.
+
+(set: $HarEquip to 0)
+&#39;&#39;Party Member Haroon has unequipped Basic Wizard Robes and Wooden Staff&#39;&#39;
+
+&quot;Hooooo....damn it Atlam, if you knew this was Salem, you should have told me so,&quot; sighed Haroon, &quot;I really don&#39;t fancy getting burned at the stake or hung even if this is just a game.&quot;
+
+&quot;Hah, even I know this one. Atlam, you really don&#39;t pay attention in class do you?&quot; said Karn proudly. 
+
+Clearing his throat, Karn begins &quot;Ahem-hem-hem, so, Salem is a town located in Massachusetts. It was most notable for the Salem Witch Trials which took place in er....1692? Ancient history, anyways..right so, the incident lead to the death of about 19 people who were accused of being witches or accomplices. They were later found to be innocent. I&#39;m guessing we stumbled into a historical dungeon and we&#39;re in the middle of the Witch Trials.&quot; 
+
+[[Back-&gt;consult your friends first]]</tw-passagedata><tw-passagedata pid="53" name="Yup, that&#39;s us" tags="" position="2423,1417" size="100,100">As you&#39;re about to reply, Karn takes the initiative to relay your message in your stead.
+
+&quot;Aye, &#39;tis us! Us two...er...Witch Hunters here have been sent to help you. This here is our Captain, Sir Atlam, and I am Sir Karn. This good fellow here dressed in nothing but his shirts and breeches is our good servant, Mr. Haroon,&quot; narrated Karn with a mischevious smile.
+
+Haroon sent Karn a glare before bowing to the man.
+
+&quot;Ah, pray pardon me, I am John Hathorne, a merchant and a magistrate of Salem,&quot;  said John, &quot;We&#39;ve called you here to solve the curse afflicting our town.&quot;
+
+[[Can you give us more details?]]
+
+</tw-passagedata><tw-passagedata pid="54" name="Nope, you got the wrong people" tags="" position="2464,1558" size="100,100">&quot;Hah! Surely you jest, Sir Hunters, for who else but a witch hunter would be dressed like you and carry such a sword?&quot; laughed the man, &quot;Oh, I am simply delighted to make your acquaintance! These past several moons have indeed been dark times for us with all matters of black magic and witch craft plauging our small town. You must help us, Sir Hunters!&quot;
+
+&#39;&#39;Quest Accepted!&#39;&#39;
+
+//It seems the game won&#39;t let you turn down the quest. Just what kind of game does that?//
+
+&quot;Ah, pray pardon me, I am John Hathorne, a merchant and a magistrate of Salem,&quot;  said John, &quot;We&#39;ve called you here to solve the curse afflicting our town.&quot;
+
+[[Can you give us more details?]]
+</tw-passagedata><tw-passagedata pid="55" name="Can you give us more details?" tags="" position="2610,1458" size="100,100">&quot;Of course, it happened last month...&quot;
+
+[[Two children of the village]] began to have fits, screaming, throwing things around rooms, uttering strange sounds, and crawling under furniture. They complained of being pricked and pinched by pins, though clearly nothing was around them. The two girls were taken to the doctor, who could find no evidence or signs of any ailments. Soon, other young women began exhibiting similar behaviors. Suspecting witch craft and black magic, you and your party have been called to catch the witch or witches.
+
+So far three suspects have been apprehended; [[Tituba, Sarag Good, and Sarah Osborne]].
+
+</tw-passagedata><tw-passagedata pid="56" name="Two children of the village" tags="" position="2697,1625" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="57" name="Tituba, Sarag Good, and Sarah Osborne" tags="" position="2570,1623" size="100,100">Information about them here. 
+
+Tituba- african slave 
+
+Sarah Good- A home bleggar, known to seek food and shelter from neighbours.
+
+Osbourne - Rarely attends church meeting, suspected of witchcraft as she remarried to an indentured servant. </tw-passagedata><tw-passagedata pid="58" name="Enter the Dungeon2" tags="" position="2723,728" size="100,100">(set: $lastPassage to &quot;Enter the Dungeon2&quot;)
+(set: $inv to (array:))
+
+You push open the door to the dungeon and a flash of light blinds you. 
+
+As your vision comes back to you, you realize that, ironically, the room is actually quite dim. Next to you, you hear Haroon whisper a spell
+
+//lux//
+
+A ball of light gathers at the tip of Haroon&#39;s staff and you notice that he&#39;s wearing a set of wizard robes, Karn is wearing a hooded set of light armor with two daggers and a crossbow strapped to him, and you&#39;re in a set of heavy armor with a claymore on your back.
+
+Before you lies a grand hall. At the end of the hall lies a giant doors, enlayed with a picture of [[an owl]].
+
+[[Status]]
+[[Consult your friends]]
+
+</tw-passagedata><tw-passagedata pid="59" name="Status" tags="" position="2827,419" size="100,100">&#39;&#39;Name    : &#39;&#39; Atlam
+&#39;&#39;HP  	  : &#39;&#39; (print: $currentHP) / (print: $maxHP)
+&#39;&#39;Attk    : &#39;&#39; Min: (print: $min) Max: (print: $max)
+&#39;&#39;Level   : &#39;&#39; (print: $level) &#39;&#39;Exp: &#39;&#39;(print:$exp)/(print:$level*2)
+
+&#39;&#39;Class   : &#39;&#39; Tanker 
+
+
+(link-goto: &quot;Back&quot;, $lastPassage)</tw-passagedata><tw-passagedata pid="60" name="an owl" tags="" position="2808,864" size="100,100">A carving of a owl is engraved on the massive door. The owl&#39;s deep eyes seems to give off a feeling of profound intelligence and wisdom!
+
+[[Enter the Owl]]
+
+[[Head Back-&gt;Enter the Dungeon2]]</tw-passagedata><tw-passagedata pid="61" name="Enter the Owl" tags="" position="3048,865" size="100,100">(set: $lastPassage to &quot;Enter the Owl&quot;)
+
+You push the door to the Owl room open, and a familiar flash of light greets you leaving you momentarily blind. When you regain your senses you feel the cool night breeze on your skin and can hear the sounds of the forest.
+
+//hoooot hoooooot//
+
+The sound of an owl echoes through the forest. The door which you came from is no longer there. You don&#39;t think you&#39;ll be able to leave unless you complete the clear conditions of this room or die, though death has become quite familiar to you by now.
+
+[[Status]]
+[[Take a look around]]</tw-passagedata><tw-passagedata pid="62" name="Take a look around" tags="" position="3134,725" size="100,100">(set: $lastPassage to &quot;Take a look around&quot;)
+
+The first thing you notice is the gigantic trees which seem to stretch to all the way to the [[moon]]. In fact, the giant tree in the center seems to do exactly that. 
+
+&quot;What do you suppose we&#39;re supposed to do here?&quot; asked Karn looking around in amazement, &quot;All I see is trees, trees, and well more trees...&quot;
+
+&quot;Well, if I had to guess...the dungeon&#39;s story should be pretty cliche and typical. Head towards the center tree and climb it to the top and slay the Owl. Then we should be able to leave....though it&#39;s best to take this chance to level-up before we climb it.&quot;
+
+
+What shall you do?.....
+
+[[I want to advance to the center tree]]
+[[Let&#39;s grind some levels first]]</tw-passagedata><tw-passagedata pid="63" name="moon" tags="" position="3197,990" size="100,100">The familiar silhouette of a rabbit can be seen on the full moon.Somehow, it looks almost as if the rabbit is looking at you.
+
+(link-goto: &quot;Back&quot;, $lastPassage)
+
+</tw-passagedata><tw-passagedata pid="64" name="Consult your friends" tags="" position="2697,882" size="100,100">&quot;This...this is what a dungeon looks like?&quot; asked Kon, &quot;I really doubt we&#39;re going to see goblins here Haroon...&quot;
+
+&quot;This...shouldn&#39;t be,&quot; mumbled Haroon in confusion, &quot;All my sources said this would definitely be a cave like dungeon with goblins!&quot; 
+
+&quot;Well, that sure as hell looks like an owl to me...&quot; 
+
+[[Looks like you won&#39;t get any useful information from your friends-&gt;Enter the Dungeon2]]</tw-passagedata><tw-passagedata pid="65" name="I want to advance to the center tree" tags="" position="3310,703" size="100,100">You start heading towards the massive tree in the center of the forest dungeon. Strangely, you meet no resistance along the way to the tree. At the base of the tree, a gust of wind carries a noise to you.
+
+//Hooot Hoot//
+
+Then another gust of wind carries a voice to you this time; an indistinguishable voice with seemingly many voices mixed into one.
+
+//&quot;Come Irregular one&quot;//
+
+//&quot;Come meet us atop the &#39;&#39;World Tree&#39;&#39;&quot;//
+
+&quot;World Tree? Irregular one?&quot;, a confused expression spread across Karn&#39;s face, &quot;Is that owl talking to us?&quot;
+
+Haroon purses his lips for a moment as if thinking, before he finally looks at you and says, &quot;The World Tree has to be the big tree right here, that I can be certain of. However, Irregular one, I can only think that it refers to you, Atlam.&quot;
+
+&quot;What are you saying Haroon?&quot; asked Karn with a frown.
+
+&quot;Well, I didn&#39;t say anything about it at first, but don&#39;t you find it strange? Atlam is a lot stronger than us now even though we all started at the same time. Don&#39;t get me wrong Atlam, it&#39;s not a bad thing by any means, but if anyone is irregular, it must be you Atlam.&quot;
+
+&quot;You&#39;re right!&quot; clapped Karn as if he had only just noticed, &quot;How did you get so strong anyways?&quot;
+
+[[Tell the Truth]]
+
+[[(Lie) I had some time to grind while you guys were away ]]
+</tw-passagedata><tw-passagedata pid="66" name="Let&#39;s grind some levels first" tags="" position="3327,1041" size="100,100">(set: $lastPassage to &quot;Let&#39;s grind some levels first&quot;)
+(if:$exp &gt;= $level*2)[
+	(set: $exp to 0)
+	(set: $level to $level + 1)
+	(set: $min to $min +1)
+	(set: $max to $max+1)
+	(set: $maxHP to 10 +($level*5))
+	(set: $currentHP to $maxHP)
+	&#39;&#39;[[Level Up! You are now level]] (print:$level)!&#39;&#39;
+]
+(else:)[
+You&#39;ve decide to postpone heading to the center tree for now in favor of getting some levels. 
+(if:$level &lt; 5)[
+(if: $level &lt;= 2)[(set:$event to (random:1,3))]
+(elseif: $level is 3) [ (set:$event to (random:3,5))]
+(elseif: $level &gt; 3 )[(set:$event to (random:5,6))]
+
+While walking around you encounter... 
+(if:$event is 1 or $event is 2)[
+	A mouse!
+	HP: 10/10 Attk: 1-3
+	
+	|[[Proceed to battle-&gt;BMouse]]|		]
+(elseif:$event is 4 or $event is 3)[
+	An owl!
+	HP: 15/15 Attk:3-5
+	
+	|[[Proceed to battle-&gt;bOwl]]|			]
+(elseif:$event is 6 or $event is 5 )[
+	A giant mouse!
+	HP: 20/20 Attk:4-6
+	
+	|[[Proceed to battle-&gt;bGmouse]]|		]
+](else:)[
+	The forest is silent now. You can hear the scuffles of and flapping of animals, but none dare approach you. It seems this is the most levels you&#39;ll be able to get from here...
+
+]
+|[[Status]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Inventory]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Head to the Center Tree -&gt;I want to advance to the center tree]]|
+]</tw-passagedata><tw-passagedata pid="67" name="BMouse" tags="" position="3218,1179" size="100,100">(set: $FightPass to &quot;BMouse&quot;)
+(set: $enemyName to &quot;Mouse&quot;)
+(set: $enemyHP to 10)
+(set: $enemyMin to 1)
+(set: $enemyMax to 3)
+(set: $enemyMaxHP to 10)
+
+Enemy: (print: $enemyName)				
+HP   : (print:$enemyHP)/(print:$enemyMaxHP)			
+Attk : Min:(print:$enemyMin) Max:(print:$enemyMax)					
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+Attk  : Min: (print: $min) Max: (print: $max)
+
+|[[Attack]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Run]]|</tw-passagedata><tw-passagedata pid="68" name="Run" tags="" position="3700,1170" size="100,100">(set: $eDamage to (random:$enemyMin, $enemyMax))
+(set: $runChance to (random:1,3))
+
+(if: $runChance is 1)[
+	(link-goto: &quot;Successfully got away&quot;, $lastPassage)
+]
+(else:)[
+You have failed to run away, and the (print:$enemyName) has landed an attack on you!
+
+Player Atlam has taken (print:$eDamage) from the enemy!
+(set:$currentHP to $currentHP - $eDamage)
+
+&#39;&#39;Name    : &#39;&#39; Atlam
+&#39;&#39;HP  	  : &#39;&#39; (print: $currentHP) / (print: $maxHP)
+&#39;&#39;Attk    : &#39;&#39; Min: (print: $min) Max: (print: $max)
+&#39;&#39;Level   : &#39;&#39; (print: $level)
+
+&#39;&#39;Class   : &#39;&#39; Tanker 
+
+(if:$currentHP &lt;= 0)[
+	&#39;&#39;[[You have Died]]&#39;&#39;
+]
+(else:)[
+	(link-goto: &quot;Back to Battle&quot;, $FightPass)
+]
+]</tw-passagedata><tw-passagedata pid="69" name="bOwl" tags="" position="3091,1173" size="100,100">(set: $FightPass to &quot;bOwl&quot;)
+(set: $enemyName to &quot;Owl&quot;)
+(set: $enemyHP to 15)
+(set: $enemyMin to 3)
+(set: $enemyMax to 5)
+(set: $enemyMaxHP to 15)
+
+Enemy: Owl				
+HP   : (print:$enemyHP)/15 				
+Attk : Min:(print:$enemyMin) Max:(print:$enemyMax)			
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+Attk  : Min: (print: $min) Max: (print: $max)
+
+|[[Attack]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Run]]|</tw-passagedata><tw-passagedata pid="70" name="bGmouse" tags="" position="3344,1181" size="100,100">(set: $FightPass to &quot;bGmouse&quot;)
+(set: $enemyName to &quot;Giant Mouse&quot;)
+(set: $enemyHP to 20)
+(set: $enemyMin to 4)
+(set: $enemyMax to 6)
+(set: $enemyMaxHP to 20)
+
+Enemy: (print: $enemyName)				
+HP   : (print:$enemyHP)/(print:$enemyMaxHP)			
+Attk : Min:(print:$enemyMin) Max:(print:$enemyMax)					
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+Attk  : Min: (print: $min) Max: (print: $max)
+
+|[[Attack]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Run]]|</tw-passagedata><tw-passagedata pid="71" name="Attack" tags="" position="3231,1339" size="100,100">(set: $rollOne to (random:1,5))
+(set: $rollTwo to (random:1,5))
+(set: $pDamage to (random:$min, $max))
+(set: $eDamage to (random:$enemyMin, $enemyMax))
+
+(if:$rollOne is 1)[
+Player Atlam&#39;s attack has missed!]
+(else:)[
+Player Atlam has dealt (print: $pDamage) to the enemy!
+(set:$enemyHP to $enemyHP - $pDamage)]
+(if:$rollTwo is 1)[
+(print:$enemyName)&#39;s attack has missed!]
+(else:)[Player Atlam has taken (print:$eDamage) from the enemy!
+(set:$currentHP to $currentHP - $eDamage)]
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+
+Enemy: (print: $enemyName)		
+HP   : (print:$enemyHP)/(print:$enemyMaxHP) 
+(if:$currentHP &gt; 0 and $enemyHP &gt; 0)[ 
+&lt;!-- You&#39;re both still alive--&gt;
+|[[Attack]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Run]]|
+]
+(elseif: $currentHP &gt; 0 and $enemyHP &lt;= 0)[ &lt;!--You win--&gt;
+	Victory, you succesfully defeated the (print: $enemyName).
+	(if:$enemyName is &quot;Mouse&quot;)[ You gained +1 exp(set: $exp to $exp + 1)]
+	(if:$enemyName is &quot;Owl&quot;)[ You gained +2 exp(set: $exp to $exp + 2)]
+(if:$enemyName is &quot;Giant Mouse&quot;)[ You gained +3 exp(set: $exp to $exp + 3)]
+	(set: $lootGain to (random: 1,2))
+	(if: $lootGain is 1)[
+		(if:$num5Potion is 0)[(set: $inv to $inv + (array:&#39;5HP Potion&#39;))]
+		(set: $num5Potion to $num5Potion +1)
+	(if:$enemyName is &quot;Giant Mouse&quot;)
+	[Obtained a 5HP Potion!(set: $num5Potion to $num5Potion +1)]
+		Obtained a 5HP Potion!
+	]
+	[[Continue walking around -&gt;Let&#39;s grind some levels first]]
+]
+(else:)[ &lt;!--You die--&gt;
+	
+	&#39;&#39;[[You have Died]]&#39;&#39;
+
+]</tw-passagedata><tw-passagedata pid="72" name="You have Died" tags="" position="3263,1535" size="100,100">(set: $numDeath to $numDeath +1)
+(set: $numDDeath to $numDeath +1)
+
+The ever so familiar text appears before your eyes...How many more times will you see it? 
+
+[[Loop-&gt;Checkpoint]] </tw-passagedata><tw-passagedata pid="73" name="Inventory" tags="" position="3476,1033" size="100,100">Inventory: (if: $inv&#39;s length is 0)[Bag is Empty](print: $inv.join(&quot;, &quot;)) 
+
+(if: $inv contains &#39;5HP Potion&#39;)[
+	[[Use 5HP Potion ]] Total: (print:$num5Potion)
+]
+
+(link-goto: &quot;Back&quot;, $lastPassage)</tw-passagedata><tw-passagedata pid="74" name="Use 5HP Potion " tags="" position="3704,1020" size="100,100">
+&#39;&#39;Player Atlam has drank a 5 HP Potion&#39;&#39;
+
+&#39;&#39;5 HP Restored&#39;&#39;
+(set:$num5Potion to $num5Potion-1)
+(if:$num5Potion is 0)[(set:$inv to $inv - (array:&#39;5HP Potion&#39;))]
+(if: $currentHP + 5 &lt;= $maxHP)[
+	(set:$currentHP to $currentHP+5)
+]
+(elseif: $currentHP+5&gt;$maxHP)[
+	(set:$currentHP to $maxHP)
+]
+
+&#39;&#39;Name    : &#39;&#39; Atlam
+&#39;&#39;HP  	  : &#39;&#39; (print: $currentHP) / (print: $maxHP)
+&#39;&#39;Attk    : &#39;&#39; Min: (print: $min) Max: (print: $max)
+&#39;&#39;Level   : &#39;&#39; (print: $level)
+
+&#39;&#39;Class   : &#39;&#39; Tanker 
+
+[[Back to Inventory-&gt;Inventory]]</tw-passagedata><tw-passagedata pid="75" name="Use 5HP Potion" tags="" position="3455,1183" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Level Up! You are now level" tags="" position="3484,829" size="100,100">(if:$level is 2)[
+You cleave the last enemy with your claymore, cleanly slicing them in half when suddenly, a message pops up before your eyes.
+
+&#39;&#39;Level Up! You are now level 2&#39;&#39;
+
+As you relish in your victory and perhaps the first positive message you&#39;ve recieved since the loops began, an unnatural gust of wind carries a sound to your.
+
+//HOOT HOOT HOOT//
+
+An eerie laughter verberates throughout the forest that sends tingles down your spine. It seems to come from no direction at all and yet, it seems to come from every direction. 
+
+//Hoooo Hooo Hooo//
+
+Karn lets out a small shiver as he clutches his shoulders, &quot;Ughhghghh, that owl sure knows how to give the heebie-jeebies&quot;
+
+The laughter almost sounded as if it were mocking you, taunting you. You can&#39;t help but feel that Karn is on to something.
+
+(link-goto: &quot;Keep going&quot;, $lastPassage) ]
+
+(if:$level is 3)[
+&#39;&#39;Level Up! You are now level 3&#39;&#39;
+
+//HOOHOOHOO//
+
+Once more a shiver runs down your spine, the laughter sounded excited this time as if it were anticipating you, waiting for you but as quick as it had came, as quick as it had ceased. The forest was suddenly filled with an ominous silence.
+
+Even the usually bright and cheerful Karn carried a grim expression on his face. Haroon is silent, but his gaze is set towards the giant tree. 
+
+Noticing that you&#39;re looking at him, he finally opens his mouth and says in a low voice, &quot;It&#39;s coming from the tree.&quot;
+
+Although he spoke no louder than a whisper, his voice seemed to shatter the night causing Karn to flinch. You give a silent nod.   
+
+(link-goto: &quot;Keep going&quot;, $lastPassage) ]
+
+(if:$level is 5)[
+
+&#39;&#39;Level Up! You are now level 5&#39;&#39;
+
+	The forest is silent now. You can hear the scuffles of and flapping of animals, but none dare approach you. It seems this is the most levels you&#39;ll be able to get from here...
+
+&quot;Good work&quot; complimented Haroon, &quot;We should to head towards the big tree now.&quot;
+
+|[[Status]]|  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Inventory]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Head to the Center Tree -&gt;I want to advance to the center tree]]|
+
+]
+(if:$level is 4)[
+
+&#39;&#39;Level Up! You are now level 4&#39;&#39;
+
+Yet another level up...You pause for a moment, anticipating the sound of the creepy laughter. Strangely nothing happens, but you kind of prefer it this way. You should continue with what you were doing. 
+
+
+(link-goto: &quot;Keep going&quot;, $lastPassage)
+]</tw-passagedata><tw-passagedata pid="77" name="DefendYourself2" tags="" position="2216,311" size="100,100">(set: $location to &quot;DefendYourself2&quot;)
+Karn lays sprawled out on the floor wide-eyed. He had snuck behind your back as soon as Haroon fired a spell to distract you, and neither of them believed that you would be able to counter them so easily. 
+
+With a flick of your wrist, you had equipped a claymore which you used to easily disarm Karn and send him flying with a kick. Next, you cleave Haroon&#39;s firebolt spell with your sword before sending a heavy punch into his gut causing him to lose grip on his staff.
+
+Haroon slowly tumbles to his knees clutching his stomach in pain as he heaves for air. He feebly stretches his arm out to grab his staff, but you quickly kick it to the side. 
+
+Strangely, none of the people around seem to care or show any indication that they had even noticed what had just happened. You surmise that it&#39;s the System doing its job. Silence fills the room, interupted only by Haroon&#39;s coughs.
+
+What do you do now?......
+(if:$friendDeath is 0)[
+[[Kill them, they&#39;re players who took over your friends]] ]
+[[Ask them for help, tell them everything and about the loop]]</tw-passagedata><tw-passagedata pid="78" name="Kill them, they&#39;re players who took over your friends" tags="" position="2371,314" size="100,100">(if:$friendDeath is 0)[
+(set:$friendDeath to $friendDeath + 2)
+
+You&#39;re tired. How many more times would you have to die? Was this world really just a game? What meaning did your life have then? Was your life and world just someone else&#39;s playground? If players could be you or your friends, then what memories in your life were really real? What was made up by the system? Did Harold and Karn deserve a life like this? Why..why...why?
+
+Questions after questions surfaced in your mind, then anger. Anger at the unfairness of it all, the unjustness of all. Indeed, the source of all these problems was the players and the system. Had they not existed....perhaps you would not have existed, but you find that a more pleasant alternative than living as a puppet in this doctored world.
+
+Your gaze turns towards Haroon and Karn who are still on the floor...It would be so satisfying if just....they would be back in the next loop anyways.....just once...
+
+&#39;&#39;Player Karn and Haroon have been defeated by Player Atlam&#39;&#39;
+
+&#39;&#39;Title obtained: the Bloody&#39;&#39; (+10 min, +10 max attk)
+	- Kill two players in PvP 
+	(set: $exp to 0) (set: $level to $level + 1)
+	(set: $min to $min +12) (set: $max to $max+12)
+&#39;&#39;Level Up! You are now level (print: $level)!&#39;&#39;
+(set: $level to $level + 1)
+(set: $maxHP to 10 +($level*5))
+&#39;&#39;Level Up! You are now level (print: $level)!&#39;&#39;
+
+Shortly after, Haroon and Karn get up groggily. 
+
+&quot;Ahhh my head hurts for some reason. Is that you, Alan?&quot;
+
+You smile at the name you haven&#39;t heard in ages.
+
+//Welcome back, Harold, Kon.//
+
+[[Time to take your life back, next Loop-&gt;Checkpoint]] 
+]	
+
+</tw-passagedata><tw-passagedata pid="79" name="Ask them for help, tell them everything and about the loop" tags="" position="2370,459" size="100,100">You tell them that you&#39;re indeed not Atlam, but about the time loop that only you remember, in which time loops at the end of the day. How you&#39;ve already gone to the dungeon, and levelled up far more than they have. 
+
+Haroon bites his lips and Karn shakes his head, &quot;I believe that you&#39;re not Atlam, but your story, it doesn&#39;t make sense. We are players who are connected to this world from a headset. Although time here is accelerated at speeds where a single day here passes in seconds in real-time, even if time looped, why would it affect us, real people&#39;s memories? Why would we not remember? And why would you remember?&quot;
+
+&quot;No, it&#39;s possible...&quot; a shaky voice came from Haroon, &quot;The headset has direct access to our brains, which allows draw from a network of saved memories from billions of people to build and simulate life-like worlds like these. Then it should have access to do the reverse, and manipulate our memories, should it choose to.&quot; 
+
+&quot;No...,&quot; Karn&#39;s face paled as he stuck a step back, &quot;Then we&#39;re stuck in an infinite loop...how many days have we looped so far?&quot;
+
+(print: $day)...
+
+Karn takes a sharp breath.
+
+Haroon stands up and walks towards you, &quot;It&#39;s a possibility that you are telling the truth. If so, if I ever ask you the question, I wan&#39;t you to tell me this...&quot;
+
+With that Haroon leans into your ear and [[whispers]] into your ear.</tw-passagedata><tw-passagedata pid="80" name="whispers" tags="" position="2500,456" size="100,100">(set: $clue to $clue + (array:&quot;HarKey&quot;))
+Haroon quietly whispers a sentence into your ears.
+
+&#39;&#39;Clue Added: Haroon&#39;s Keyword&#39;&#39;
+
+As soon as Haroon finishes his sentence, he jams a blade into your stomach. You look down and notice that it&#39;s one of Karn&#39;s blade which you had tossed aside in your fight earlier. As your life slowly fades away, you nod to Haroon.
+
+&#39;&#39;[[You have Died-&gt;Checkpoint]]&#39;&#39;</tw-passagedata><tw-passagedata pid="81" name="Tell the Truth" tags="" position="3637,686" size="100,100">You tell them that you&#39;re indeed not Atlam, but about the time loop that only you remember, in which time loops at the end of the day. How you&#39;ve already gone to the dungeon, and levelled up far more than they have. 
+
+Haroon bites his lips and Karn shakes his head, &quot;I believe that you&#39;re not Atlam, but your story, it doesn&#39;t make sense. We are players who are connected to this world from a headset. Although time here is accelerated at speeds where a single day here passes in seconds in real-time, even if time looped, why would it affect us, real people&#39;s memories? Why would we not remember? And why would you remember?&quot;
+
+&quot;No, it&#39;s possible...&quot; a shaky voice came from Haroon, &quot;The headset has direct access to our brains, which allows draw from a network of saved memories from billions of people to build and simulate life-like worlds like these. Then it should have access to do the reverse, and manipulate our memories, should it choose to.&quot; 
+
+&quot;No...,&quot; Karn&#39;s face paled as he stuck a step back, &quot;Then we&#39;re stuck in an infinite loop...how many days have we looped so far?&quot;
+
+(print: $day)...
+
+Karn takes a sharp breath.
+
+Haroon stands up and walks towards you, &quot;It&#39;s a possibility. If you&#39;re telling the truth, then I assume you&#39;ve told us this before?&quot; 
+
+(if: $clue contains &#39;HarKey&#39;) [
+	[[Yes, I have]]
+]
+(else:)[
+	[[No, I haven&#39;t]]
+]</tw-passagedata><tw-passagedata pid="82" name="(Lie) I had some time to grind while you guys were away " tags="" position="3651,857" size="100,100">Haroon and Karn don&#39;t really seem to believe it, but they don&#39;t pursue the subject any further. 
+
+[[Keeping going -&gt; CP2]]</tw-passagedata><tw-passagedata pid="83" name="Yes, I have" tags="" position="3646,523" size="100,100">Before Haroon can walk any closer, you tell him the keyword he had whispered to you in a previous loop.
+
+The expression on Haroon and Karn&#39;s faces twists with surprise and Haroon halts to a stop. 
+
+&quot;I see, so you are telling the truth then...,&quot; a conflicted expression on his face.
+
+He tosses a dagger hidden in sleeves towards Karn who skillfully catches it and sheathes it at his side all in one smooth motion. 
+
+&quot;So...we&#39;re really looping and that Atlam is actually an NPC, which is you....and now we have to work with you to end the loop?&quot; asked Karn.
+
+Before you can say anything, Karn smiles brightly and says &quot;Fine, I&#39;ll believe in you. Let&#39;s do this then.&quot;
+
+(set: $ally to 1)
+
+[[Head up the Tree -&gt; CP2]]
+</tw-passagedata><tw-passagedata pid="84" name="No, I haven&#39;t" tags="" position="3823,743" size="100,100">&quot;A shame,&quot; replied Haroon, &quot;then let me tell you now&quot;
+
+He leans into your ear and whispers to you:
+
+//If you tell the truth, then go back to the start and tell us the truth once more//
+
+You look at him with a confused expression, but before you can react he drives a blade into your stomach. 
+
+&#39;&#39;[[You have Died-&gt;Checkpoint]]&#39;&#39;</tw-passagedata><tw-passagedata pid="85" name=" CP2" tags="" position="3843,517" size="100,100">&#39;&#39;Checkpoint 2 Reached&#39;&#39;
+//From now on you&#39;ll have the option of looping to the start of the game with all your memories intact, or looping to the point at which you reach the base of tree//
+
+
+You would like to.....
+[[Ascend the World Tree]] 
+[[Loop to the start-&gt;Waking Up2]] 
+
+(set: $currentHP to $maxHP)
+
+</tw-passagedata><tw-passagedata pid="86" name="Ascend the World Tree" tags="" position="4027,513" size="100,100">(set: $lastPassage to &quot;Ascend the World Tree&quot;)
+You climb up the World Tree. It&#39;s surprisingly accomadating. The massive tree seems to have natural wooden stairs that spiral around it and you and your party are easily able to ascend beyond the night clouds. As you climb higher, you can can see your breathe in front of you as it grows chillier and chillier. 
+
+After ascending past the clouds, you look up and notice the [[moon]] seems a lot closer and bigger than you have ever seen it. With the clouds gone you can make out the various branches of the tree, each the size and length of several football fields. In the distance you think you can make out dilapidated wooden tree houses all interconnected with wooden bridgesm, but they look abandoned. 
+
+You talk little on the way up, the usually talkative Karn seems to be deep in thought and Haroon seems to be the same. 
+
+It&#39;s a while before you finally [[reach the top]].</tw-passagedata><tw-passagedata pid="87" name="reach the top" tags="" position="4209,511" size="100,100">The stair seems to end at the apex of the tree&#39;s trunk. The branches of the tree seem to stretch higher and higher, but in front of you is a vast grassland with numerous trees. 
+
+//Fwaaap Fwaaap Fwaap//
+
+From the distance you can hear the sound of wings flapping.
+
+//Hoot Hoot//
+
+Then a shadow flies over your head, followed shortly by a strong gust of wind that almost knocks you onto the floor. 
+
+When you look up you can see a giant owl the size of elephant in perched upon a branch of the world tree with it&#39;s back to you.
+
+&quot;Look at the size of that thing!&quot; exclaimed Karn, &quot;Don&#39;t tell me we have to fight it?&quot;
+
+&quot;Let&#39;s wait to hear what it says,&quot; said Haroon shaking his head, &quot;if it wanted to fight us, I have no doubts it could have crushed us as it flew over a moment earlier.&quot;
+
+[[Next-&gt;OwlSpeech]]
+</tw-passagedata><tw-passagedata pid="88" name="OwlSpeech" tags="" position="4347,500" size="100,100">//Hoot Hoot//
+
+&quot;Greetings, Irregular One,&quot; said the giant owl with a hoot as it twisted it&#39;s head to face you, &quot;I am Wan Shi Tong, He Who Knows Ten Thousand Things. I have been watching you, Irregular One. In fact, I have watched you all for (print: $days) loop.&quot; 
+
+//Your body shakes//
+
+Of all the loops, this is the only one who you&#39;ve met who knows of all the loops.
+
+[[You know of the loops?]]
+[[I don&#39;t know what you&#39;re talking about]]</tw-passagedata><tw-passagedata pid="89" name="You know of the loops?" tags="" position="4501,601" size="100,100">
+//Hoot Hoot//
+
+&quot;Why of course I do, why would I, He Who Knows Ten Thousand Things, not?&quot; replied Wan Shi Tong as he ruffled his feathers, &quot;However an exchange of information comes at a price, and you have many things which interest me Irregular One. Let us make a trade. I shall ask you a question and you shall ask me one in return.&quot;
+
+&quot;Or at least that would normally be the case,&quot; sighed the Owl, &quot;but time is short. Very well asks your questions and be quick about it.&quot;
+
+[[Ask Questions]]</tw-passagedata><tw-passagedata pid="90" name="I don&#39;t know what you&#39;re talking about" tags="" position="4892,496" size="100,100">(set: $lastPassage to &quot;I don&#39;t know what you&#39;re talking about&quot;)
+
+&quot;Do you truly? Or do you fear what your companions will do when they learn the truth?&quot; 
+
+&quot;Or perhaps they already know the truth?&quot;
+
+(if: $ally is 1) [
+	&quot;Yes, we know,&quot; interjected Haroon, &quot;If you know of the loops, then do you know how to end it?&quot;
+
+//Hoot Hoot//
+
+&quot;Why of course I do, why would I, He Who Knows Ten Thousand Things, not?&quot; replied Wan Shi Tong as he ruffled his feathers, &quot;However an exchange of information comes at a price, and you have many things which interest me Irregular One. Let us make a trade. I shall ask you a question and you shall ask me one in return.
+
+Or at least that would normally be the case, but time is short. Very well asks your questions and be quick about it.&quot;
+
+[[Ask Questions]]
+]
+(else:)[
+&quot;Loop? Atlam, what are you talking about,&quot; questioned Haroon. 
+
+&quot;Hoh? So they do not know?&quot; smiled Wan Shi Tong, &quot;Then allow me to enlighten your companions.&quot;
+
+Before you can say anything, Wan Shi Tong launches into his explanation.
+
+&quot;Time is stuck in a loop. This same day has repeated itself over and over for (print:$days) days, and it will perhaps continue to do so indefinitely,&quot; mused the Owl, &quot;The few who remember the loops can be counted on one hand.&quot;
+
+&quot;You mean to say...Atlam remembers the loops?&quot; asked Karn, &quot;Is that how he got so strong?&quot;
+
+&quot;You ask the wrong questions for that is not Atlam, however the answer remains a yes no matter how you interpret it,&quot; smiled the Owl.
+
+Haroon, a bit quicker in the head than Karn jumps up, &quot;Not Atlam? Then that&#39;s an NPC who remembers the loops? But you said Atlam remembers the loops as well? Then...Atlam is here? But not him?&quot; questioned Haroon.
+
+&quot;You are not wrong,&quot; replied the Owl, &quot;Your friend here is known as a bugged NPC. An irregularity and a by-product of an unforseen error by the System.&quot;
+
+A smile spread across Wan Shi Tong&#39;s face, &quot;Allow me to re-introduce myself. I am Sys-Admin Wan Shi Tong, a subset of the System. As a part of the system, I shall reward you handsomely for helping in erasing this bug.&quot;
+
+(if:$friendDeath is 2)[
+After all, it&#39;s not the first time he has killed you is it? A holographic monitor appears in the air showing a scene from the past. Karn is laying on the floor, and Haroon is crawling towards his staff clutching his stomach. You kick the staff away before lifting your claymore and driving it straight into Haroon&#39;s back. Soon after, you finish Karn off as well. The video cuts off there.
+
+It is quiet for a moment as Haroon and Karn digest what they&#39;ve just seen, but that silence is soon shattered...
+
+]
+(else:)[ 
+It is quiet for a moment as Haroon and Karn digest what they&#39;ve just heard, but that silence is soon shattered...
+]
+&quot;YOUUUUUU FUCK, I TRUSTED YOU&quot; cried Haroon as a staff appeared in his hand, &quot;WHAT HAVE YOU DONE WITH THE REAL ATLAM?&quot;
+
+Even Karn grips his dagger until his knuckles turn white.
+
+|[[Enter Battle-&gt;BHaroon]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Status]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Inventory]]|
+
+
+
+
+]</tw-passagedata><tw-passagedata pid="91" name="BHaroon" tags="" position="4789,213" size="100,100">(set: $lastPassage to &quot;BHaroon&quot;)
+(set: $enemyName to &quot;Haroon&quot;)
+
+(set: $enemyHP to 35)
+(set: $enemyMin to 6)
+(set: $enemyMax to 10)
+(set: $enemyMaxHP to 35)
+
+Enemy: (print: $enemyName)				
+HP   : (print:$enemyHP)/(print:$enemyMaxHP)			
+Attk : Min:(print:$enemyMin) Max:(print:$enemyMax)					
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+Attk  : Min: (print: $min) Max: (print: $max)
+
+|[[Attack-&gt;Attack2]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Inventory]]|</tw-passagedata><tw-passagedata pid="92" name="Attack2" tags="" position="4632,467" size="100,100">(set: $lastPassage to &quot;Attack2&quot;)
+(set: $rollOne to (random:1,5))
+(set: $rollTwo to (random:1,5))
+(set: $pDamage to (random:$min, $max))
+(set: $eDamage to (random:$enemyMin, $enemyMax))
+
+(if:$rollOne is 1)[
+Player Atlam&#39;s attack has missed!]
+(else:)[
+Player Atlam has dealt (print: $pDamage) to the enemy!
+(set:$enemyHP to $enemyHP - $pDamage)]
+(if:$rollTwo is 1)[
+(print:$enemyName)&#39;s attack has missed!]
+(else:)[Player Atlam has taken (print:$eDamage) from the enemy!
+(set:$currentHP to $currentHP - $eDamage)]
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+
+Enemy: (print: $enemyName)		
+HP   : (print:$enemyHP)/(print:$enemyMaxHP) 
+(if:$currentHP &gt; 0 and $enemyHP &gt; 0)[ 
+&lt;!-- You&#39;re both still alive--&gt;
+|[[Attack-&gt;Attack2]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Inventory]]|
+]
+(elseif: $currentHP &gt; 0 and $enemyHP &lt;= 0)[ &lt;!--You win--&gt;
+	Victory, you succesfully defeated (print: $enemyName).
+	(if:$enemyName is &quot;Haroon&quot;)[ You gained +10 exp(set: $exp to $exp + 10)]
+	(if:$enemyName is &quot;Karn&quot;)[ You gained +10 exp(set: $exp to $exp + 10)]
+	(if:$exp &gt;= $level*2)[
+	(set: $exp to 0)
+	(set: $level to $level + 1)
+	(set: $min to $min +1)
+	(set: $max to $max+1)
+	(set: $maxHP to 10 +($level*5))
+	(set: $currentHP to $maxHP)
+	&#39;&#39;Level Up! You are now level (print:$level)!&#39;&#39;
+]
+]
+	(set: $lootGain to (random: 1,2))
+	(if: $lootGain is 1)[
+		(if:$num5Potion is 0)[(set: $inv to $inv + (array:&#39;5HP Potion&#39;))]
+		(set: $lootNum to (random: 4,6))
+	    Obtained (print:$lootNum)x 5HP Potion!(set: $num5Potion to $num5Potion +$lootNum)
+	]
+	(if:$enemyName is &quot;Karn&quot;) [ [[Victory -&gt;KarnDeath]]]
+	(if:$enemyName is &quot;Haroon&quot;) [ [[Victory -&gt;HaroonDeath]]]
+]
+(else:)[ &lt;!--You die--&gt;
+	
+	&#39;&#39;[[You have Died-&gt;DeathAtTree]]&#39;&#39;
+
+]</tw-passagedata><tw-passagedata pid="93" name="DeathAtTree" tags="" position="4930,214" size="100,100">(set: $lastPassage to &quot;DeathAtTree&quot;)
+You couldn&#39;t do it and find yourself knocked down onto the ground waiting for your last moments. You look up to the sky and the rabbit on the [[moon]] seems to be laughing at you.
+
+You close your eyes. For some reason, you have a feeling this will be your last loop. You hear the flap of wings and a tremor as something lands next to you. 
+
+&#39;&#39;System: Transferring Player Atlem rights to Sys-Admin Wan Shi Tong&#39;&#39;
+&#39;&#39;System: Deleting Player Atlem&#39;&#39;
+&#39;&#39;System: Adjusting History&#39;&#39;
+
+&#39;&#39;The End&#39;&#39;
+
+The System has erased the bugged NPC. Order to the world has been restored, and no one will remember the NPC or anything that the NPC has done. Strangely Wan Shi Tong was interested in your player rights for some reason, but that is no longer your problem. Rest well.
+
+Thanks for playing! 
+
+</tw-passagedata><tw-passagedata pid="94" name="KarnDeath" tags="" position="4936,335" size="100,100">Karn is quick with his movements and manages to land multiple hits on you, however, his defenses are weak. It doesn&#39;t take long for you to finish Karn off either.
+
+Before he fades, he looks at you with a sad look.
+
+&#39;&#39;Player Atlam has defeated Player Karn&#39;&#39;
+
+[[Next-&gt;OwlFinal]]</tw-passagedata><tw-passagedata pid="95" name="HaroonDeath" tags="" position="4790,336" size="100,100">(set: $lastPassage to &quot;HaroonDeath&quot;)
+
+As your sword pierces through Haroon&#39;s heart and he stares at you in fury as his body fades away. 
+
+&#39;&#39;Player Atlam has defeated Player Haroon!&#39;&#39;
+
+&quot;HAROON, NO!,&quot; Karn lunges at you too late as you turn to intercept his attack.
+
+|[[Enter Battle With Karn -&gt; KBattle]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp |[[Status]]|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; |[[Inventory]]|</tw-passagedata><tw-passagedata pid="96" name=" KBattle" tags="" position="5070,209" size="100,100">(set: $lastPassage to &quot; KBattle&quot;)
+(set: $enemyName to &quot;Haroon&quot;)
+
+(set: $enemyHP to 30)
+(set: $enemyMin to 8)
+(set: $enemyMax to 13)
+(set: $enemyMaxHP to 30)
+
+Enemy: (print: $enemyName)				
+HP   : (print:$enemyHP)/(print:$enemyMaxHP)			
+Attk : Min:(print:$enemyMin) Max:(print:$enemyMax)					
+
+Player: Atlam 
+HP    : (print:$currentHP)/(print:$maxHP)
+Attk  : Min: (print: $min) Max: (print: $max)
+
+|[[Attack-&gt;Attack2]]| &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;|[[Inventory]]|</tw-passagedata><tw-passagedata pid="97" name="OwlFinal" tags="" position="5078,333" size="100,100">The Owl smiles at you, &quot;You may be saying that I enticed them to fight you, but perhaps that was what you wanted in the end? Or perhaps not?&quot;
+
+&quot;Believe me when I say I did it for your best interest. A test if you would, whether or not you could handle it.&quot;
+
+&quot;In truth, it matters not, they will not remember come the next loop, nor may you be around for the next loop.&quot;
+
+//&quot;hoot hoot hoot&quot;// the Owl laughed.
+
+&quot;Come climb upon my back, I will not hurt you.&quot;
+
+&quot;Now, now, don&#39;t give me that look,&quot; said the Owl, &quot;Have I Wan Shi Tong told any lies thus far?&quot;
+
+&quot;Someone would like to see you and I&#39;m afraid only I can take you there.&quot;
+
+&quot;Where to?&quot; asked the Owl with a smile, &quot;To the moon of course&quot;.
+
+
+[[Climb onto the Owl&#39;s Back]]
+</tw-passagedata><tw-passagedata pid="98" name="Ask Questions" tags="" position="4739,680" size="100,100">What question would you like to ask?
+
+[[Who are you?]]
+[[How do I end the loop?]]
+(if:$clue contains &#39;loop-bug&#39;)[
+[[If you are the system that maintains the world, then why do you not fix the loop?]]]
+(if:$clue contains &#39;rogue-sub&#39;)[
+[[Then which sub-system is causing this bug?]]
+]
+</tw-passagedata><tw-passagedata pid="99" name="Climb onto the Owl&#39;s Back" tags="" position="5394,414" size="100,100">Unfortunately I&#39;ve run out of time. I was way too ambitious with this assignment, and ended up shooting myself in the foot with it. 
+
+I rushed the story towards the end, and I think it shows, and there may be bugs in the last couple passages. I did not have much time to playtest it after the ascent up the World Tree. 
+
+You will face Atlem at the end. If Haroon and Karn are still with you, and you haven&#39;t killed them off, you can convince Atlem to stop the loop without bloodshed. 
+
+If you have killed Haroon and Karn in a previous life, Atlem will be hostile to you and you will battle him. He will mirror your stats, and if you win, you will become an System Admin. You will play a mini game where you read some Java Code to look for the error, and clicking the correct one will fix it. Following your previous motives, you will then shut the world out from outsiders and live for eternities as a God. 
+
+Should you die, Atlem has erased his only threat in the world, and continues the loop to gain immeasurable power while everyone else stagnates. 
+
+He finds life in here more exciting than the world outside, and explains his motifves to you for staying in the game. The game is aptly named SecondLife because life outside is horrible, and the replicated 21st century is the Golden Era in their world&#39;s history. To relive it, they have recreated it in a game.</tw-passagedata><tw-passagedata pid="100" name="Who are you?" tags="" position="4422,807" size="100,100">&quot;Not a very good question&quot; frowned the Owl, &quot;I suppose you meant to ask what are you? Regardless, allow me to re-introduce myself. I am an owl, as you can see, but more specefically, I am Sys-Admin Wan Shi Tong, a subset of the System that manages this world.&quot;
+
+
+[[Back-&gt;Ask Questions]]</tw-passagedata><tw-passagedata pid="101" name="How do I end the loop?" tags="" position="4627,821" size="100,100">The Owl smiled once more, &quot;The loop is a bug. An infinite loop, if you will. A variable within time is not updating properly. Fix that and you can fix the loop.&quot;
+
+(set: $clue to $clue + (array:&quot;loop-bug&quot;))
+
+[[Back-&gt;Ask Questions]]</tw-passagedata><tw-passagedata pid="102" name="If you are the system that maintains the world, then why do you not fix the loop?" tags="" position="4783,818" size="100,100">&quot;My, my, answers seem to lead to more questions than answers sometimes don&#39;t they?&quot; smiled the Owl. 
+
+&quot;The answer is simple,&quot; said the Owl while ruffling his feathers, &quot;because the System created the loop on purpose, or at least a subset of it. Actions done by the System are considered legal, so we cannot do anything about it unless the Sub-System that originally performed the action does something about it or until someone higher up in the hierarchy notices it. But who is higher than the System in this world? None. Only those outside this world, but how many loops, days, years, decades will pass in this world before it is noticed in the real world?&quot;
+
+(set: $clue to $clue + (array:&quot;rogue-sub&quot;))
+
+[[Back-&gt;Ask Questions]]</tw-passagedata><tw-passagedata pid="103" name="Then which sub-system is causing this bug?" tags="" position="4933,739" size="100,100">&quot;Ah, finally asking the correct question!&quot; hooted the Owl, &quot;I&#39;m afraid it&#39;s someone you should be extremely familiar with yet unfamiliar with!&quot;
+
+&quot;Hoot is it you ask?&quot; continued the Owl excitedly, &quot;DING DING DING! Correct! You guessed it! Your other half, Atlam!&quot;
+
+//ahem//
+
+&quot;Excuse me,&quot; coughed the Owl in embarassment as he reigned in his excitement, &quot;Very well, since we are short on time, let me explain. Did you not find this dungeon strange? Haroon&#39;s research definitely told you that this would be a goblin dungeon, so why did it lead to my domain?&quot;
+
+&quot;I lead you here,&quot; continued the Owl solemnly, &quot;For only you can fix the loop. I told you that only the one who initiated the loop had the authority to end it, did I not? If only Atlam has the power to end the loop, then you who are effectively Atlam also has that power.&quot;
+
+&quot;Atlam abused a bug to separate from your body and was able to take control of the part of the System that has the highest level of authority. As a side-effect you retained his player rights, and when he bugged the loop, he made it so that only he, a part of the System would remember the loop. What he overlooked was that this included all other Subsets of the System and himself or you.&quot;
+
+&quot;I don&#39;t know why he did it unfortunately,&quot; said the Owl, &quot;Although I am He Who Knows Ten Thousand Things, In the end I am not a human of either the real world or this world. If you really want to know, you will have to ask him.&quot;
+
+&quot;That is enough questions,&quot; shook the Owl, &quot;I&#39;m afraid any longer and Atlem will take notice. climb upon my back. I will take you to Atlem, but unfortunately I cannot help you any further than that. A System cannot attack another Subset of the System. I would only get in the way. Now hurry.&quot;
+
+[[Climb on the Owl&#39;s Back]]</tw-passagedata><tw-passagedata pid="104" name="Climb on the Owl&#39;s Back" tags="" position="5395,566" size="100,100">Unfortunately I&#39;ve run out of time. I was way too ambitious with this assignment, and ended up shooting myself in the foot with it. 
+
+I rushed the story towards the end, and I think it shows, and there may be bugs in the last couple passages. I did not have much time to playtest it after the ascent up the World Tree. 
+
+You will face Atlem at the end. If Haroon and Karn are still with you, and you haven&#39;t killed them off, you can convince Atlem to stop the loop without bloodshed. 
+
+If you have killed Haroon and Karn in a previous life, Atlem will be hostile to you and you will battle him. He will mirror your stats, and if you win, you will become an System Admin. You will play a mini game where you read some Java Code to look for the error, and clicking the correct one will fix it. Following your previous motives, you will then shut the world out from outsiders and live for eternities as a God. 
+
+Should you die, Atlem has erased his only threat in the world, and continues the loop to gain immeasurable power while everyone else stagnates. 
+
+He finds life in here more exciting than the world outside, and explains his motifves to you for staying in the game. The game is aptly named SecondLife because life outside is horrible, and the replicated 21st century is the Golden Era in their world&#39;s history. To relive it, they have recreated it in a game.</tw-passagedata></tw-storydata>
